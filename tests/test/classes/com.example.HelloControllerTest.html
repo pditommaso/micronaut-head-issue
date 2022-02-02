@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - HelloControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>HelloControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.html">com.example</a> &gt; HelloControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">3</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.578s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">40%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="should handle bar head type"></a>
+<h3 class="failures">should handle bar head type</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+response.contentType.get() == MediaType.TEXT_PLAIN_TYPE
+|        |           |
+|        |           java.util.NoSuchElementException: No value present
+|        |           	at java.base/java.util.Optional.get(Optional.java:148)
+|        |           	at com.example.HelloControllerTest.should handle bar head type(HelloControllerTest.groovy:73)
+|        Optional.empty
+&lt;io.micronaut.http.client.netty.FullNettyClientHttpResponse@473f3a0c status=OK headers=io.micronaut.http.netty.NettyHttpHeaders@7619fbf6 nettyCookies=io.micronaut.http.netty.cookies.NettyCookies@2119de72 attributes={} nettyHttpResponse=HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(freed, components=0))
+HTTP/1.1 200 OK
+date: Wed, 2 Feb 2022 20:00:52 GMT
+connection: close
+content-length: 10 convertedBodies=[String:Optional.empty] mediaTypeCodecRegistry=io.micronaut.http.codec.DefaultMediaTypeCodecRegistry@5a8ab345 byteBufferFactory=io.micronaut.buffer.netty.NettyByteBufferFactory@41a52c7d body=null complete=true bodyBytes=null&gt;
+
+	at com.example.HelloControllerTest.should handle bar head type(HelloControllerTest.groovy:73)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:148)
+	... 1 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="should handle foo head length"></a>
+<h3 class="failures">should handle foo head length</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+response.contentLength == 3
+|        |             |
+|        -1            false
+&lt;io.micronaut.http.client.netty.FullNettyClientHttpResponse@66edab97 status=OK headers=io.micronaut.http.netty.NettyHttpHeaders@4ae7d817 nettyCookies=io.micronaut.http.netty.cookies.NettyCookies@374b18ae attributes={} nettyHttpResponse=HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(freed, components=0))
+HTTP/1.1 200 OK
+date: Wed, 2 Feb 2022 20:00:51 GMT
+connection: close convertedBodies=[String:Optional.empty] mediaTypeCodecRegistry=io.micronaut.http.codec.DefaultMediaTypeCodecRegistry@5a8ab345 byteBufferFactory=io.micronaut.buffer.netty.NettyByteBufferFactory@41a52c7d body=null complete=true bodyBytes=null&gt;
+
+	at com.example.HelloControllerTest.should handle foo head length(HelloControllerTest.groovy:43)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="should handle foo head type"></a>
+<h3 class="failures">should handle foo head type</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+response.contentType.get() == MediaType.TEXT_PLAIN_TYPE
+|        |           |
+|        |           java.util.NoSuchElementException: No value present
+|        |           	at java.base/java.util.Optional.get(Optional.java:148)
+|        |           	at com.example.HelloControllerTest.should handle foo head type(HelloControllerTest.groovy:53)
+|        Optional.empty
+&lt;io.micronaut.http.client.netty.FullNettyClientHttpResponse@2d77802f status=OK headers=io.micronaut.http.netty.NettyHttpHeaders@1c6e35d2 nettyCookies=io.micronaut.http.netty.cookies.NettyCookies@23882e48 attributes={} nettyHttpResponse=HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(freed, components=0))
+HTTP/1.1 200 OK
+date: Wed, 2 Feb 2022 20:00:51 GMT
+connection: close convertedBodies=[String:Optional.empty] mediaTypeCodecRegistry=io.micronaut.http.codec.DefaultMediaTypeCodecRegistry@5a8ab345 byteBufferFactory=io.micronaut.buffer.netty.NettyByteBufferFactory@41a52c7d body=null complete=true bodyBytes=null&gt;
+
+	at com.example.HelloControllerTest.should handle foo head type(HelloControllerTest.groovy:53)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:148)
+	... 1 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should handle bar head length</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">should handle bar head type</td>
+<td class="failures">0.028s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">should handle foo get</td>
+<td class="success">1.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">should handle foo head length</td>
+<td class="failures">0.340s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">should handle foo head type</td>
+<td class="failures">0.113s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[36m21:00:49.480?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.1</a> at Feb 2, 2022, 9:00:52 PM</p>
+</div>
+</div>
+</body>
+</html>
